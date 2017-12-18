@@ -26,3 +26,5 @@ node_modules/
 .htaccess
 .htpasswd
 database.yml
+secrets.yml
+

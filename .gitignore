@@ -22,9 +22,10 @@ doc/
 .secret
 secret.key
 node_modules/
+na-nda.sublime-workspace
+na-nda.sublime-project
 
 .htaccess
 .htpasswd
 database.yml
 secrets.yml
-

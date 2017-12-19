@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#Person.create(name:'Taro', age:38, mail:'taro@yamada')
+#Person.create(name:'Hanako', age:34, mail:'hanako@flower')
+#Person.create(name:'sachiko', age:56, mail:'sachiko@happy')
+
+table_names = %w(members articles entries)
+table_names.each do |table_name|
+  path = Rails.root.join("db/seeds", "development", table_name + ".rb")
+  if File.exist?(path)
+    puts "Creating #{table_name}..."
+    require path
+  end
+end

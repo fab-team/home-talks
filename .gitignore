@@ -29,3 +29,5 @@ na-nda.sublime-project
 .htpasswd
 database.yml
 secrets.yml
+
+.vagrant

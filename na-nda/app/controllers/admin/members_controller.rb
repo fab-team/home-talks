@@ -64,9 +64,8 @@ class Admin::MembersController < Admin::Base
 
   private
   def member_params
-    attrs = [:number, :name, :full_name, :gender, :birthday, :email,
-      :password, :password_confirmation, :administrator]
-    attrs << { image_attributes: [:_destroy, :id, :uploaded_image] }
+    attrs = [:number, :name, :full_name, :gender, :birthday, :email, :password, :password_confirmation, :administrator]
+    attrs << { image_attributes: [:_distroy, :id, :uploaded_image] }
     params.require(:member).permit(attrs)
   end
 

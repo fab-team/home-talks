@@ -1,15 +1,9 @@
 require 'test_helper'
 
-class Admin::TopControllerTest < ActionController::TestCase
-  test "index for a common member" do
-    login_as("taro")
-    get :index
-    assert_template "errors/forbidden"
+class Admin::TopControllerTest < ActionDispatch::IntegrationTest
+  test "should get index" do
+    get admin_top_index_url
+    assert_response :success
   end
 
-  test "index for an admin" do
-    login_as("jiro", true)
-    get :index
-    assert_template "admin/top/index"
-  end
 end

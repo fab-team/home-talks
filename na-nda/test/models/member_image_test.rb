@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class HeloControllerTest < ActionDispatch::IntegrationTest
+class MemberImageTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

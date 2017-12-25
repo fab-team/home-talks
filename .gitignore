@@ -29,5 +29,6 @@ na-nda.sublime-project
 .htpasswd
 database.yml
 secrets.yml
+unicorn.rake
 
 .vagrant

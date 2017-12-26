@@ -29,6 +29,9 @@ na-nda.sublime-project
 .htpasswd
 database.yml
 secrets.yml
+
+#set unicorn file
 unicorn.rake
+unicorn.rb
 
 .vagrant

@@ -28,6 +28,8 @@ ja:
       entry:
         title: タイトル
         body: 本文
+        hint: ヒント
+        answer: 解答
         posted_at: 日時
         status: 状態
         status_draft: 下書き

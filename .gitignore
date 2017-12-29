@@ -30,4 +30,8 @@ na-nda.sublime-project
 database.yml
 secrets.yml
 
+#set unicorn file
+unicorn.rake
+unicorn.rb
+
 .vagrant

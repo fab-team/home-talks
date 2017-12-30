@@ -5,6 +5,12 @@ module ApplicationHelper
     title
   end
 
+  def page_description
+    description = "脳トレから暇つぶしまで使える「クイズ」を紹介してます。頭の体操や大人数で盛り上がってください。"
+    description = @page_description + " - " + description if @page_description
+    description
+  end
+
   def menu_link_to(text, path)
     link_to_unless_current(text, path) { content_tag(:span, text) }
   end

@@ -1,16 +1,8 @@
 class SessionsController < ApplicationController
   def create
-    member = Member.authenticate(params[:name], params[:password])
-    if member
-      session[:member_id] = member.id
-    else
-      flash.alert = "名前とパスワードが一致しません"
-    end
-    redirect_to :root
-  end
-
-  def destroy
-    session.delete(:member_id)
-    redirect_to :root
+    user = User.find_or_create_from_auth_hash(request.env['omniauth.auth'])
+# request.env['omniauth.auth']に、OmniAuthによってHashのようにユーザーのデータが格納されている。
+    session[:user_id] = user.id
+    redirect_to root_path, notice: 'ログインしました'
   end
 end

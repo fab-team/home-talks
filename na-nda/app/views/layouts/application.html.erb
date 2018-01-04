@@ -14,6 +14,9 @@
     <div id="header">
     <%= render "shared/header" %>
     </div>
+
+    <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+
     <div id="content">
       <% if flash.notice %>
       <p class="notice"><%= flash.notice %></p>

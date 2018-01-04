@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "bad_request" => "top#bad_request"
   get "internal_server_error" => "top#internal_server_error"
   get "lesson/:action(/:name)" => "lesson"
+  get '/auth/:provider/callback' => 'sessions#create'
 
   resources :members, only: [:index, :show] do
     collection { get "search" }

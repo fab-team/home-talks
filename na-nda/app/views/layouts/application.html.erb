@@ -1,35 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <%= render "shared/head" %>
-  <title><%= page_title %></title>
-  <meta name="description" content="<%= page_description %>" />
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>NaNda</title>
+    <%= csrf_meta_tags %>
 
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-    <%= render "shared/header" %>
-    </div>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-    <%= link_to "Twitterでログイン", user_twitter_omniauth_authorize_path %>
-
-    <div id="content">
-      <% if flash.notice %>
-      <p class="notice"><%= flash.notice %></p>
-      <% end %>
-
-      <%= yield %>
-    </div>
-    <div id="sidebar">
-      <%= render "shared/sidebar" %>
-    </div>
-    <div id="footer">
-      <%= render "shared/footer" %>
-    </div>
-  </div>
-</body>
+  <body>
+    <%= yield %>
+  </body>
 </html>

@@ -33,12 +33,16 @@ gem 'jbuilder', '~> 2.5'
 # パスワード暗号化
 gem 'bcrypt', '~> 3.1.7'
 
+# webapp側の起動
 gem 'unicorn'
 gem 'unicorn-rails'
 
 # twitterAPI
 gem 'omniauth'
 gem 'omniauth-twitter'
+
+# 環境変数の管理
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

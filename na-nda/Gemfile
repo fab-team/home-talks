@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'omniauth-twitter'
 
+# 環境変数設定
+gem 'dotenv-rails'
+
 gem 'unicorn'
 gem 'unicorn-rails'
 

@@ -1,2 +1,0 @@
-module HeloHelper
-end

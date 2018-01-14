@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NaNda</title>
-    <%= csrf_meta_tags %>
+<head>
+	<title>NaNda</title>
+	<%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
+<body>
 
-  	<% if user_signed_in? %>
-  	<%= link_to "Sign out", destroy_user_session_path %>
-  	<% else %>
-  	<%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path %>
-  	<% end %>
+	<header>
+		<nav>
+			<% if user_signed_in? %>
+			<strong><%= link_to current_user.username, pages_show_path %></strong>
+			<%= link_to 'プロフィール変更', edit_user_registration_path %>
+			<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+			<% else %>
+			<%= link_to 'サインアップ', new_user_registration_path %>
+			<%= link_to 'ログイン', new_user_session_path %>
+			<% end %>
+		</nav>
+	</header>
 
-  	<p class="notice"><%= notice %></p>
-  	<p class="alert"><%= alert %></p>
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
 
-  	<%= yield %>
-  </body>
+	<%= yield %>
+
+</body>
 </html>

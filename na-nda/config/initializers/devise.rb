@@ -8,13 +8,13 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'bf3dcc9a0f881ed59579b3cb856a50d050e2bc11486a10921c95602b318ac5b69d409c9f304cfe778ecb3c1d691e89fe9b3d870217c7767e830875b35cca054f'
+  # config.secret_key = '864fbc296ebd7a0678b13f2a1c9cbc606602e8c8a3336a91187655c9824c9d93897e5a3b9f2b4e81f878616bdb006c6242a5f67e9caa855fe078b7d2c2fbe149'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'homerareter@gmail.com'
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -110,7 +110,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'd10a6d3806580a6f866f02f9328ca0506e88df2f673ad6809600c095e0065bb4a0aafd1e7df29699790185850835fda376c679480180ae3dc27110300f93aca5'
+  # config.pepper = 'afe6dfc994a47630dfe1750d46a3bb4e24fa1fa5aef0a2bececed8f39892219b32837f14aac956118141772c7958d99b8687982fe7073cfbab6163ead3517b8a'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -186,8 +186,6 @@ Devise.setup do |config|
   # :both  = Enables both strategies
   # :none  = No unlock strategy. You should handle unlocking by yourself.
   # config.unlock_strategy = :both
-  config.unlock_strategy = :email
-  config.maximum_attempts = 4
 
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
@@ -256,6 +254,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :twitter, ENV['TWITTER_CONSUMER_KEY'], ENV['TWITTER_CONSUMER_SECRET'], display: 'popup'
+
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

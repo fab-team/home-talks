@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
 	protect_from_forgery with: :exception
 
+  # コントローラーに設定して、ログイン済ユーザーのみにアクセスを許可する
+  # before_action :authenticate_user! #protect_from_forgery with: :exceptionより後におく。
+
   class Forbidden < StandardError; end
   class NotFound < StandardError; end
 

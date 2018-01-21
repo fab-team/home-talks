@@ -1,5 +1,4 @@
 <ul>
-
 	<%if user_signed_in? %>
 	<li><%=current_user.email%></li>
 	<li><%=current_user.name%></li>
@@ -8,3 +7,15 @@
 	<li><%=current_user.location%></li>
 	<%end%>
 </ul>
+
+<% if @entries.present? %>
+<% @entries.each do |entry| %>
+<h2><%= entry.title %></h2>
+<p><%= truncate(entry.body, length: 80) %>
+<%= link_to "もっと読む", entry %></p>
+<% end %>
+
+  <%= will_paginate @entries %>
+<% else %>
+  <p>記事がありません。</p>
+<% end %>

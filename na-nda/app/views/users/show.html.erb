@@ -3,3 +3,7 @@
 
 <% provide(:title, @user.name) %>
 <h1>My page (<%= @user.name %>)</h1>
+
+<ul>
+	<li><%= link_to "記事一覧", [@user, :entries] %></li>
+</ul>

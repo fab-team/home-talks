@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-	protect_from_forgery with: :exception
+  protect_from_forgery with: :exception
 
   # コントローラーに設定して、ログイン済ユーザーのみにアクセスを許可する
   # before_action :authenticate_user! #protect_from_forgery with: :exceptionより後におく。
@@ -17,15 +17,14 @@ class ApplicationController < ActionController::Base
   rescue_from Forbidden, with: :rescue_403
   rescue_from NotFound, with: :rescue_404
 
-
   private
-  def current_member
-    Member.find_by(id: session[:member_id]) if session[:member_id]
-  end
-  helper_method :current_member
+  # def current_user
+  #   user.find_by(id: session[:user_id]) if session[:user_id]
+  # end
+  # helper_method :current_user
 
   def login_required
-    raise Forbidden unless current_member
+    raise Forbidden unless current_user
   end
 
   def rescue_400(exception)

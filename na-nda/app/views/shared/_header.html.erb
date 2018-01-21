@@ -1,7 +1,7 @@
 
-<% if current_member %>
+<% if current_user %>
 <p class="member">
-<%= link_to current_member.name + "さん", :account %> |
+<%= link_to current_user.name + "さん", :account %> |
 <%= link_to "ログアウト", :session,
       method: :delete, data: { confirm: "ログアウトしますか？" } %>
 </p>
@@ -19,9 +19,9 @@
 <%= menu_link_to "TOP", root_path %>
 &nbsp;|&nbsp; <%= menu_link_to "ニュース", :articles %>
 &nbsp;|&nbsp; <%= menu_link_to "ブログ", :entries %>
-<% if current_member %>
+<% if current_user %>
 &nbsp;|&nbsp; <%= menu_link_to "会員名簿", :members %>
-<% if current_member.administrator? %>
+<% if current_user.administrator? %>
 &nbsp;|&nbsp; <%= menu_link_to "管理ページ", :admin_root %>
 <% end %>
 <% end %>

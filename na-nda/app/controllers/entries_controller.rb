@@ -3,20 +3,23 @@ class EntriesController < ApplicationController
 
   # 記事一覧
   def index
-  	if params[:user_id]
-  		@user = User.find(params[:user_id])
-  		@entries = @user.entries
-  	else
-  		@entries = Entry.all
-  	end
-  	@entries = @entries.readable_for(current_user)
-  	.order(posted_at: :desc).paginate(page: params[:page], per_page: 5)
+    if params[:tag]
+      # tagのハッシュがあった時
+      @entries = Entry.tagged_with(params[:tag])
+    elsif params[:user_id]
+      # user_idのハッシュがあった時
+      @user = User.find(params[:user_id])
+      @entries = @user.entries
+    else
+      @entries = Entry.all
+    end
+    @entries = @entries.readable_for(current_user)
+    .order(posted_at: :desc).paginate(page: params[:page], per_page: 5)
   end
 
   # 記事の詳細
   def show
     @entry = Entry.readable_for(current_user).find(params[:id])
-    @tag_list = @entry.tags.pluck(:name).join(",")
   end
 
   # 新規登録フォーム
@@ -27,15 +30,12 @@ class EntriesController < ApplicationController
   # 編集
   def edit
     @entry = current_user.entries.find(params[:id])
-    @tag_list = @entry.tags.pluck(:name).join(",")
   end
 
   def create
     @entry = Entry.new(entry_params)
     @entry.author = current_user
-    tag_list = params[:tag_list].split(",")
     if @entry.save
-       @entry.save_tags(tag_list)
       redirect_to @entry, notice: "記事を作成しました。"
     else
       render "new"
@@ -45,9 +45,7 @@ class EntriesController < ApplicationController
   def update
     @entry = current_user.entries.find(params[:id])
     @entry.assign_attributes(entry_params)
-    tag_list = params[:tag_list].split(",")
     if @entry.save
-      @entry.save_tags(tag_list)
       redirect_to @entry, notice: "記事を更新しました。"
     else
       render "edit"
@@ -62,7 +60,7 @@ class EntriesController < ApplicationController
 
   private
   def entry_params
-    params.require(:entry).permit(:title, :body, :posted_at, :status)
+    params.require(:entry).permit(:title, :body, :posted_at, :status, :tag_list)
   end
 
 end

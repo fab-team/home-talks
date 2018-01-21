@@ -50,7 +50,8 @@ gem 'will_paginate', '~> 3.0'
 # 日本語化
 gem 'rails-i18n'
 
-
+# タグ機能
+gem 'acts-as-taggable-on', :git => 'https://github.com/mbleigh/acts-as-taggable-on'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 

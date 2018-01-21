@@ -1,12 +1,20 @@
 <%= render "shared/errors", obj: @entry %>
 
 <table class="attr">
-    <div class="article-tags-field">
-      <%= form.label "たぐたぐ" %>
-      <ul id="article-tags">
-      </ul>
+
+  <div class='field'>
+    <%#= form.label :tag_list, 'Tags (separated by commas)' %><br/>
+    <ul id="article-tags">
+      <%#= form.text_field :tag_list %>
+    </ul>
+
+
+    <div class='field'>
+      <%= form.label :tag_list, 'Tags (separated by commas)' %><br/>
+      <%= form.text_field :tag_list %>
     </div>
-    <%= hidden_field_tag :tag_hidden,@tag_list %>
+  </div>
+
   <tr>
     <th width="80"><%= form.label :title %></th>
     <td><%= form.text_field :title, size: 50 %></td>
@@ -18,8 +26,8 @@
   <tr>
     <th><%= form.label :posted_at, for: "entry_posted_at_1i" %></th>
     <td><%= form.datetime_select :posted_at,
-              start_year: 2000, end_year: Time.now.year + 1,
-              use_month_numbers: true %></td>
+    start_year: 2000, end_year: Time.now.year + 1,
+    use_month_numbers: true %></td>
   </tr>
   <tr>
     <th><%= form.label :status %></th>

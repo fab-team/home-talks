@@ -12,10 +12,13 @@
 <% @entries.each do |entry| %>
 <h2><%= entry.title %></h2>
 <p><%= truncate(entry.body, length: 80) %>
-<%= link_to "もっと読む", entry %></p>
+	<%= link_to "もっと読む", entry %>
+</p>
 <% end %>
 
-  <%= will_paginate @entries %>
+<%= will_paginate @entries %>
 <% else %>
-  <p>記事がありません。</p>
+<p>記事がありません。</p>
 <% end %>
+
+

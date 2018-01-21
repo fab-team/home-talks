@@ -3,13 +3,13 @@ Rails.application.routes.draw do
 
   # get 'users/show'
 
-	root 'home#index'
-  get "about" => "top#about", as: "about"
+  root 'home#index'
+  get "about" => "home#about", as: "about"
 
-	devise_for :users, controllers: {
-		omniauth_callbacks: 'users/omniauth_callbacks'
-	}
-	resources :users, :only => [:index, :show]
+  devise_for :users, controllers: {
+    omniauth_callbacks: 'users/omniauth_callbacks'
+  }
+  resources :users, :only => [:index, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :users, only: [:index, :show] do
@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     resources :entries, only: [:index]
   end
 
+  get 'tags/:tag', to: 'entries#index', as: :tag
   resources :entries
 
   # get 'entries/index'

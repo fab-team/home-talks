@@ -11,13 +11,18 @@
 <% end %>
 
 <% if @entries.present? %>
-  <% @entries.each do |entry| %>
-    <h2><%= entry.title %></h2>
-    <p><b>たぐ</b><%= @tag_list %></p>
-    <p><%= truncate(entry.body, length: 80) %>
-      <%= link_to "もっと読む", entry %></p>
-  <% end %>
-  <%= will_paginate @entries %>
+<% @entries.each do |entry| %>
+<h2><%= entry.title %></h2>
+
+<p>Tags: <%= entry.tag_list %></p>
+<p>Tags: <%= entry.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
+
+<p>
+	<%= truncate(entry.body, length: 80) %>
+	<%= link_to "もっと読む", entry %>
+</p>
+<% end %>
+<%= will_paginate @entries %>
 <% else %>
-  <p>記事がありません。</p>
+<p>記事がありません。</p>
 <% end %>

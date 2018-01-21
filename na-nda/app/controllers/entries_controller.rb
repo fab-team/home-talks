@@ -16,6 +16,7 @@ class EntriesController < ApplicationController
   # 記事の詳細
   def show
     @entry = Entry.readable_for(current_user).find(params[:id])
+    @tag_list = @entry.tags.pluck(:name).join(",")
   end
 
   # 新規登録フォーム
@@ -26,12 +27,15 @@ class EntriesController < ApplicationController
   # 編集
   def edit
     @entry = current_user.entries.find(params[:id])
+    @tag_list = @entry.tags.pluck(:name).join(",")
   end
 
   def create
     @entry = Entry.new(entry_params)
     @entry.author = current_user
+    tag_list = params[:tag_list].split(",")
     if @entry.save
+       @entry.save_tags(tag_list)
       redirect_to @entry, notice: "記事を作成しました。"
     else
       render "new"
@@ -41,7 +45,9 @@ class EntriesController < ApplicationController
   def update
     @entry = current_user.entries.find(params[:id])
     @entry.assign_attributes(entry_params)
+    tag_list = params[:tag_list].split(",")
     if @entry.save
+      @entry.save_tags(tag_list)
       redirect_to @entry, notice: "記事を更新しました。"
     else
       render "edit"

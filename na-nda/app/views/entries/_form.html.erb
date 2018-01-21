@@ -1,6 +1,12 @@
 <%= render "shared/errors", obj: @entry %>
 
 <table class="attr">
+    <div class="article-tags-field">
+      <%= form.label "たぐたぐ" %>
+      <ul id="article-tags">
+      </ul>
+    </div>
+    <%= hidden_field_tag :tag_hidden,@tag_list %>
   <tr>
     <th width="80"><%= form.label :title %></th>
     <td><%= form.text_field :title, size: 50 %></td>

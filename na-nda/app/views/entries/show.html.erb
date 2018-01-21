@@ -6,6 +6,9 @@
 <h1><%= @entry.author.name %>さんのブログ</h1>
 <h2><%= @entry.title %></h2>
 
+<h2><%= @tag_list %></h2>
+
+
 
 <% if current_user == @entry.author %>
 <p><%= link_to "編集", [:edit, @entry] %></p>

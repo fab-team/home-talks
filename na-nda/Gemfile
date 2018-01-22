@@ -38,6 +38,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'omniauth-twitter'
 
+# 権限管理
+gem 'cancancan'
+gem 'rails_admin'
+
 # 環境変数設定
 gem 'dotenv-rails'
 

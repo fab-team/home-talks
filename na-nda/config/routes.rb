@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   # get 'users/index'
 
   # get 'users/show'
@@ -24,6 +25,15 @@ Rails.application.routes.draw do
 
   get 'tags/:tag', to: 'entries#index', as: :tag
   resources :entries
+
+
+  namespace :admin do
+    root "top#index"
+    resources :members do
+      collection { get "search" }
+    end
+    resources :articles
+  end
 
   # get 'entries/index'
 

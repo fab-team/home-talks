@@ -1,0 +1,22 @@
+<h1>Users#index</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+
+<ul class="users">
+	<%# @users.each do |user| %>
+	<li>
+		<%#= link_to user.name, user %>
+	</li>
+	<%# end %>
+</ul>
+
+<p><b>マイページ情報</b></p>
+<ul>
+	<%if user_signed_in? %>
+	<li>current_user.email<br><%=current_user.email%></li>
+	<li>current_user.name<br><%=current_user.name%></li>
+	<li>current_user.nickname<br><%=current_user.nickname%></li>
+	<li>current_user.image<br><%=current_user.image%><br>
+		<img src="<%=current_user.image%>"></li>
+	<li>current_user.location<br><%=current_user.location%></li>
+	<%end%>
+</ul>

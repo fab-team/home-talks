@@ -38,11 +38,26 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'omniauth-twitter'
 
+# 権限管理
+gem 'cancancan'
+gem 'rails_admin'
+
 # 環境変数設定
 gem 'dotenv-rails'
 
 gem 'unicorn'
 gem 'unicorn-rails'
+
+# ページャー
+gem 'will_paginate', '~> 3.0'
+
+# 日本語化
+gem 'rails-i18n'
+
+# タグ機能
+gem 'acts-as-taggable-on', :git => 'https://github.com/mbleigh/acts-as-taggable-on'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

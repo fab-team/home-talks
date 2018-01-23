@@ -1,0 +1,28 @@
+<h1>Entries#index</h1>
+<p>Find me in app/views/entries/index.html.erb</p>
+ほげー
+
+<% @page_title = current_user ? current_user.name + "さんのブログ" : "会員のブログ" %>
+<h1><%= @page_title %></h1>
+
+
+<% if user_signed_in? %>
+<p><%= link_to "ブログ記事の作成", :new_entry %></p>
+<% end %>
+
+<% if @entries.present? %>
+<% @entries.each do |entry| %>
+<h2><%= entry.title %></h2>
+
+<p>Tags: <%= entry.tag_list %></p>
+<p>Tags: <%= entry.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
+
+<p>
+	<%= truncate(entry.body, length: 80) %>
+	<%= link_to "もっと読む", entry %>
+</p>
+<% end %>
+<%= will_paginate @entries %>
+<% else %>
+<p>記事がありません。</p>
+<% end %>

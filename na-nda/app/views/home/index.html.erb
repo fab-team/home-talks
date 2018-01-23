@@ -1,15 +1,24 @@
 <ul>
-	<%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path %>
 	<%if user_signed_in? %>
 	<li><%=current_user.email%></li>
-
 	<li><%=current_user.name%></li>
 	<li><%=current_user.nickname%></li>
 	<li><%=current_user.image%></li>
 	<li><%=current_user.location%></li>
-
-	<li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
-	<%else%>
-	<li><%= link_to "ログイン", new_user_session_path %></li>
 	<%end%>
 </ul>
+
+<% if @entries.present? %>
+<% @entries.each do |entry| %>
+<h2><%= entry.title %></h2>
+<p><%= truncate(entry.body, length: 80) %>
+	<%= link_to "もっと読む", entry %>
+</p>
+<% end %>
+
+<%= will_paginate @entries %>
+<% else %>
+<p>記事がありません。</p>
+<% end %>
+
+

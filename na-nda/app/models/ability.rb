@@ -28,10 +28,5 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-
-    if user && user.admin_flg?
-      can :access, :rails_admin
-      can :manage, :all
-    end
   end
 end

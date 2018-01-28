@@ -44,7 +44,7 @@ Vagrant.configure("2") do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
-  config.vm.synced_folder "na-nda", "/var/www/na-nda.com/na-nda", create: "true", :mount_options => ['dmode=755', 'fmode=644']
+  config.vm.synced_folder "na-nda", "/var/www/home-talks.net/home-talks", create: "true", :mount_options => ['dmode=755', 'fmode=644']
 
 
   # Provider-specific configuration so you can fine-tune various

@@ -1,21 +1,25 @@
-<h1>Entries#show</h1>
-<p>Find me in app/views/entries/show.html.erb</p>
+<article class="p-article c-talk--right">
+	<b class="c-talk__img" style="background-image: url(&quot;<%= @entry.author.image %>&quot;);"></b>
+	<p class="c-talk__name"><%= @entry.author.name %></p>
+	<span class="c-talk__date"><%= @entry.posted_at.strftime("%m/%d %H:%M") %></span>
 
-<% @page_title = @entry.title + " - " + @entry.author.name + "さんのブログ" %>
-
-<h1><%= @entry.author.name %>さんのブログ</h1>
-<h2><%= @entry.title %></h2>
-
-<p>Tags: <%= @entry.tag_list %></p>
-
-<ul>
-<% @entry.tag_list.each do |tag| %>
-  <li class="label label-primary"><%= tag %></li>
-<% end %>
-</ul>
-
+	<a class="c-talk__link" href="http://twitter.com/share?url=https://<%= request.host_with_port%><%= url_for(action: :show, id: @entry.id) %>&text=<%= @entry.title %>&hashtags=ホメトーク" target="_blank">
+		<div class="c-talk__text">
+			<h1 class="c-talk__balloon"><%= @entry.title %></h1>
+		</div>
+	</a>
 <% if current_user == @entry.author %>
-<p><%= link_to "編集", [:edit, @entry] %></p>
+<%= link_to "編集", [:edit, @entry] %>
 <% end %>
+</article>
 
-<%= simple_format(@entry.body) %>
+
+<div class="p-article__detail">
+	<div class="c-headline--small">ホメポイント!</div>
+	<%= simple_format(@entry.body, :class => "p-article__detail__text") %>
+</div>
+
+<ul class="c-flex p-sns">
+	<!-- <li class="c-sns--facebook"><i class="fa fa-facebook" aria-hidden="true"></i>facebookボタン</li> -->
+	<li class="c-sns--twitter"><i class="fa fa-twitter" aria-hidden="true"></i>twitterボタン</li>
+</ul>

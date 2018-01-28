@@ -35,8 +35,10 @@
     start_year: 2000, end_year: Time.now.year + 1,
     use_month_numbers: true %></td>
   </tr>
+  <% if @current_user.admin_flg == true %>
   <tr>
     <th><%= form.label :status %></th>
     <td><%= form.select :status, Entry.status_options %></td>
   </tr>
+  <% end %>
 </table>

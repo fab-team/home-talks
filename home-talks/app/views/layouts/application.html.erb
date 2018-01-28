@@ -3,19 +3,23 @@
 <head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
 	<%= display_meta_tags(default_meta_tags) %>
 	<%= csrf_meta_tags %>
+	<%= render "shared/head" %>
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
 <body>
-
 	<%= render "shared/header" %>
 
-	<%= yield %>
+	<div class="p-content">
+		<div class="p-content__inner">
+			<%= yield %>
 
-	<%= render "shared/sidebar" %>
+			<%#= render "shared/sidebar" %>
+		</div>
+	</div>
+
 	<%= render "shared/footer" %>
-
 </body>
 </html>

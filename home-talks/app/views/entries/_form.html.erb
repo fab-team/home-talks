@@ -1,33 +1,27 @@
 <%= render "shared/errors", obj: @entry %>
 
-<table class="attr">
+<table class="attr" style="width: 100%;">
 
-  <div class='field'>
-
-
-    <div class='field'>
+    <!-- <div class='field'> -->
       <%#= form.label :tag_list, 'Tags (separated by commas)' %><br/>
       <%#= form.text_field :tag_list %>
-    </div>
+    <!-- </div> -->
 
-    <div class='field'>
-      <%= form.label :sex_list, '性別（カンマ区切り）' %><br/>
-      <%= form.text_field :sex_list %>
-    </div>
-
-    <div class='field'>
-      <%= form.label :job_list, '職業（カンマ区切り）' %><br/>
-      <%= form.text_field :job_list %>
-    </div>
-  </div>
-
+  <tr>
+    <th width="80"><%= form.label :sex_list, '性別（カンマ区切り）' %></th>
+    <td><%= form.text_field :sex_list %></td>
+  </tr>
+  <tr>
+    <th width="80"><%= form.label :job_list, '職業（カンマ区切り）' %></th>
+    <td><%= form.text_field :job_list %></td>
+  </tr>
   <tr>
     <th width="80"><%= form.label :title %></th>
     <td><%= form.text_field :title, size: 50 %></td>
   </tr>
   <tr>
     <th><%= form.label :body %></th>
-    <td><%= form.text_area :body, rows: 10, cols: 45 %></td>
+    <td><%= form.text_area :body%></td>
   </tr>
   <tr>
     <th><%= form.label :posted_at, for: "entry_posted_at_1i" %></th>
@@ -35,8 +29,10 @@
     start_year: 2000, end_year: Time.now.year + 1,
     use_month_numbers: true %></td>
   </tr>
+  <% if @current_user.admin_flg == true %>
   <tr>
     <th><%= form.label :status %></th>
     <td><%= form.select :status, Entry.status_options %></td>
   </tr>
+  <% end %>
 </table>

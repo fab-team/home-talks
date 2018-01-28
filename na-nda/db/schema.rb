@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20180122141820) do
     t.string "title", null: false
     t.text "body"
     t.datetime "posted_at", null: false
-    t.string "status", default: "draft", null: false
+    t.string "status", default: "public", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_entries_on_user_id"

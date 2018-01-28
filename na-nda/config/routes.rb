@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # get 'users/show'
 
-  root 'home#index'
+  # root 'home#index'
   get "about" => "home#about", as: "about"
 
   devise_for :users, controllers: {
@@ -25,15 +25,7 @@ Rails.application.routes.draw do
 
   get 'tags/:tag', to: 'entries#index', as: :tag
   resources :entries
-
-
-  namespace :admin do
-    root "top#index"
-    resources :members do
-      collection { get "search" }
-    end
-    resources :articles
-  end
+  root 'entries#index'
 
   # get 'entries/index'
 

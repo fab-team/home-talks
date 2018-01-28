@@ -5,6 +5,7 @@ class EntriesController < ApplicationController
   def index
     if params[:tag]
       # tagのハッシュがあった時
+      # tagged_withでタグ「:tag」でタグごとにフィルター
       @entries = Entry.tagged_with(params[:tag])
     elsif params[:user_id]
       # user_idのハッシュがあった時
@@ -60,7 +61,7 @@ class EntriesController < ApplicationController
 
   private
   def entry_params
-    params.require(:entry).permit(:title, :body, :posted_at, :status, :tag_list)
+    params.require(:entry).permit(:title, :body, :posted_at, :status, :tag_list, :sex_list, :job_list)
   end
 
 end

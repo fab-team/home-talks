@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <%= render "shared/head" %>
   <title>NaNda</title>
   <%= csrf_meta_tags %>
 
@@ -10,23 +11,12 @@
 
 <body>
 
- <ul>
- <%if user_signed_in? %>
-   <!-- サインアウト状態 -->
-   <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
-   <% else %>
-   <!-- サインイン状態 -->
-   <li><%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path %></li>
-   <li><%= link_to "ログイン", new_user_session_path %></li>
- <% end %>
- </ul>
+  <%= render "shared/header" %>
 
-<div id='tag_cloud'>
-  <% tag_cloud Entry.tag_counts, %w{s m l} do |tag, css_class| %>
-    <%= link_to tag.name, tag_path(tag.name), class: css_class %>
-  <% end %>
-</div>
+  <%= yield %>
 
- <%= yield %>
+  <%= render "shared/sidebar" %>
+  <%= render "shared/footer" %>
+
 </body>
 </html>

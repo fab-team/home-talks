@@ -1,0 +1,17 @@
+<%= link_to "TOP", root_path %>
+<%= link_to "このサイトについて", about_path %>
+<%= link_to "一覧", entries_path %>
+
+<ul>
+	<%if user_signed_in? %>
+	<!-- サインイン状態 -->
+	<li><%= link_to "マイページ", users_path %></li>
+	<li><%= link_to "記事一覧", [current_user, :entries] %></li>
+	<li><%= link_to "ブログ記事の作成", :new_entry %></li>
+	<li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+	<% else %>
+	<!-- サインアウト状態 -->
+	<li><%= link_to "Twitterでログイン", user_twitter_omniauth_authorize_path %></li>
+	<!-- <li><%#= link_to "Twitterでログイン", new_user_session_path %></li> -->
+	<% end %>
+</ul>

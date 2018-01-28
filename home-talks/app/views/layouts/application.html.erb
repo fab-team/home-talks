@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+	<%= display_meta_tags(default_meta_tags) %>
+	<%= csrf_meta_tags %>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+
+	<%= render "shared/header" %>
+
+	<%= yield %>
+
+	<%= render "shared/sidebar" %>
+	<%= render "shared/footer" %>
+
+</body>
+</html>

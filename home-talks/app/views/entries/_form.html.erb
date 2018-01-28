@@ -3,15 +3,21 @@
 <table class="attr">
 
   <div class='field'>
-    <%#= form.label :tag_list, 'Tags (separated by commas)' %><br/>
-    <ul id="article-tags">
-      <%#= form.text_field :tag_list %>
-    </ul>
 
 
     <div class='field'>
-      <%= form.label :tag_list, 'Tags (separated by commas)' %><br/>
-      <%= form.text_field :tag_list %>
+      <%#= form.label :tag_list, 'Tags (separated by commas)' %><br/>
+      <%#= form.text_field :tag_list %>
+    </div>
+
+    <div class='field'>
+      <%= form.label :sex_list, '性別（カンマ区切り）' %><br/>
+      <%= form.text_field :sex_list %>
+    </div>
+
+    <div class='field'>
+      <%= form.label :job_list, '職業（カンマ区切り）' %><br/>
+      <%= form.text_field :job_list %>
     </div>
   </div>
 

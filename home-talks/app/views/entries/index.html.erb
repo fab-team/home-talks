@@ -2,13 +2,8 @@
 <p>Find me in app/views/entries/index.html.erb</p>
 ほげー
 
-<% @page_title = current_user ? current_user.name + "さんのブログ" : "会員のブログ" %>
+<%# @page_title = current_user ? current_user.name + "さんのブログ" : "会員のブログ" %>
 <h1><%= @page_title %></h1>
-
-
-<% if user_signed_in? %>
-<p><%= link_to "ブログ記事の作成", :new_entry %></p>
-<% end %>
 
 <% if @entries.present? %>
 <% @entries.each do |entry| %>
@@ -18,9 +13,10 @@
 <p>Tags: <%= entry.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
 
 <p>
-	<%= truncate(entry.body, length: 80) %>
+	<%= truncate(entry.body) %>
 	<%= link_to "もっと読む", entry %>
 </p>
+
 <% end %>
 <%= will_paginate @entries %>
 <% else %>

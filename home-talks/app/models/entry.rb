@@ -1,9 +1,10 @@
 class Entry < ApplicationRecord
 	belongs_to :author, class_name: "User", foreign_key: "user_id"
+  acts_as_taggable_on :sex, :job
   acts_as_taggable
 
 	# バリデージョン
-  STATUS_VALUES = %w(draft user_only public)
+  STATUS_VALUES = %w(public draft)
 
   validates :title, presence: true, length: { maximum: 200 }
   validates :body, :posted_at, presence: true

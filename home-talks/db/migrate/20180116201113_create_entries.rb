@@ -5,7 +5,7 @@ class CreateEntries < ActiveRecord::Migration[5.1]
       t.string :title, null: false                    # タイトル
       t.text :body                                    # 本文
       t.datetime :posted_at, null: false              # 投稿日
-      t.string :status, null: false, default: "draft" # 状態
+      t.string :status, null: false, default: "public" # 状態
 
       t.timestamps null: false
     end

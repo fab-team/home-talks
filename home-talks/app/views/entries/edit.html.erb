@@ -1,8 +1,6 @@
-<h1>ホメワードの編集</h1>
-
 <p><%= link_to "一覧に戻る", @entry %></p>
 
 <%= form_for @entry do |form| %>
 <%= render "form", form: form %>
-<p><%= form.submit %></p>
+<div class="c-button"><%= form.submit %></div>
 <% end %>

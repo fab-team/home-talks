@@ -3,23 +3,29 @@
 	<p class="c-talk__name"><%= @entry.author.name %></p>
 	<span class="c-talk__date"><%= @entry.posted_at.strftime("%m/%d %H:%M") %></span>
 
-	<a class="c-talk__link" href="http://twitter.com/share?url=https://<%= request.host_with_port%><%= url_for(action: :show, id: @entry.id) %>&text=<%= @entry.title %>&hashtags=ホメトーク" target="_blank">
-		<div class="c-talk__text">
-			<h1 class="c-talk__balloon"><%= @entry.title %></h1>
-		</div>
-	</a>
-<% if current_user == @entry.author %>
-<%= link_to "編集", [:edit, @entry] %>
-<% end %>
+	<div class="c-talk__text">
+		<h1 class="c-talk__balloon"><%= @entry.title %></h1>
+	</div>
+	<% if current_user == @entry.author %>
+	<ul class="p-article__bottom c-text--midium">
+		<li>
+			<%= link_to "編集", [:edit, @entry] %>
+		</li>
+	</ul>
+	<% end %>
 </article>
 
 
 <div class="p-article__detail">
-	<div class="c-headline--small">ホメポイント!</div>
+	<div class="p-article__detail__ttl">ホメポイント!</div>
 	<%= simple_format(@entry.body, :class => "p-article__detail__text") %>
 </div>
 
-<ul class="c-flex p-sns">
+<ul class="p-sns">
 	<!-- <li class="c-sns--facebook"><i class="fa fa-facebook" aria-hidden="true"></i>facebookボタン</li> -->
-	<li class="c-sns--twitter"><i class="fa fa-twitter" aria-hidden="true"></i>twitterボタン</li>
+	<li class="c-sns--twitter">
+		<a href="http://twitter.com/share?url=https://<%= request.host_with_port%><%= url_for(action: :show, id: @entry.id) %>&text=「<%= @entry.title %>」%0a&hashtags=ホメトーク" target="_blank">
+			<i class="fa fa-twitter" aria-hidden="true"></i>twitterボタン
+		</a>
+	</li>
 </ul>

@@ -1,38 +1,68 @@
 <%= render "shared/errors", obj: @entry %>
 
-<table class="attr" style="width: 100%;">
+<div class="p-form">
 
-    <!-- <div class='field'> -->
-      <%#= form.label :tag_list, 'Tags (separated by commas)' %><br/>
-      <%#= form.text_field :tag_list %>
+  <!-- <div class='field'> -->
+    <%#= form.label :tag_list, 'Tags (separated by commas)' %>
+    <%#= form.text_field :tag_list %>
     <!-- </div> -->
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :sex_list, '性別（カンマ区切り）' %>
+      </div>
+      <div class="p-form__date">
+        <%= form.text_field :sex_list %>
+      </div>
+    </div>
 
-  <tr>
-    <th width="80"><%= form.label :sex_list, '性別（カンマ区切り）' %></th>
-    <td><%= form.text_field :sex_list %></td>
-  </tr>
-  <tr>
-    <th width="80"><%= form.label :job_list, '職業（カンマ区切り）' %></th>
-    <td><%= form.text_field :job_list %></td>
-  </tr>
-  <tr>
-    <th width="80"><%= form.label :title %></th>
-    <td><%= form.text_field :title, size: 50 %></td>
-  </tr>
-  <tr>
-    <th><%= form.label :body %></th>
-    <td><%= form.text_area :body%></td>
-  </tr>
-  <tr>
-    <th><%= form.label :posted_at, for: "entry_posted_at_1i" %></th>
-    <td><%= form.datetime_select :posted_at,
-    start_year: 2000, end_year: Time.now.year + 1,
-    use_month_numbers: true %></td>
-  </tr>
-  <% if @current_user.admin_flg == true %>
-  <tr>
-    <th><%= form.label :status %></th>
-    <td><%= form.select :status, Entry.status_options %></td>
-  </tr>
-  <% end %>
-</table>
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :job_list, '職業（カンマ区切り）' %>
+      </div>
+      <div class="p-form__date">
+        <%= form.text_field :job_list %>
+      </div>
+    </div>
+
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :title %><span class="p-form__tag--important">必須</span>
+      </div>
+      <div class="p-form__date">
+        <%= form.text_field :title%>
+      </div>
+    </div>
+
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :body %>
+      </div>
+      <div class="p-form__date">
+        <%= form.text_area :body%>
+        <span class="p-form__annotation">※エピソードがあったら書いてください。</span>
+      </div>
+    </div>
+
+    <div class="p-form__item" style="display: none;">
+      <div class="p-form__heading">
+        <%= form.label :posted_at, for: "entry_posted_at_1i" %>
+      </div>
+      <div class="p-form__date">
+        <%= form.datetime_select :posted_at,
+        start_year: 2000, end_year: Time.now.year + 1,
+        use_month_numbers: true %>
+      </div>
+    </div>
+
+    <% if @current_user.admin_flg == true %>
+
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :status %>
+      </div>
+      <div class="p-form__date">
+        <%= form.select :status, Entry.status_options %>
+      </div>
+    </div>
+    <% end %>
+  </div>

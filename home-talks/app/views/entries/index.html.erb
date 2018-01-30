@@ -1,5 +1,5 @@
 <%# @page_title = current_user ? current_user.name + "さんのブログ" : "会員のブログ" %>
-<h2 class="c-headline--midium">吹き出しを押してTwitterでシェアしよう</h2>
+<h2 class="c-headline__label">吹き出しを押してTwitterでシェアしよう</h2>
 
 <% if @entries.present? %>
 <% @entries.each do |entry| %>
@@ -8,23 +8,27 @@
 	<p class="c-talk__name"><%= entry.author.name %></p>
 	<span class="c-talk__date"><%= entry.posted_at.strftime("%m/%d %H:%M") %></span>
 	<%#= link_to entry, class: 'c-talk__link' do %>
-	<a class="c-talk__link" href="http://twitter.com/share?url=https://<%= request.host_with_port%><%= url_for(action: :show, id: entry.id) %>&text=<%= entry.title %>&hashtags=ホメトーク" target="_blank">
-		<div class="c-talk__text">
-			<h2 class="c-talk__balloon"><%= entry.title %></h2>
-		</div>
-	</a>
+	<div class="c-talk__text">
+		<h2 class="c-talk__balloon"><%= entry.title %></h2>
+	</div>
 	<%# end %>
 	<%#= entry.tag_list %>
 	<%#= entry.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %>
 
-	<%= link_to "もっと読む", entry %>
+	<ul class="p-article__bottom c-text--midium">
+		<li>
+			<%= link_to "もっと読む", entry %>
+		</li>
+		<% if current_user == entry.author %>
+		<li>
+			<%= link_to "編集", [:edit, entry] %>
+		</li>
+		<% end %>
+	</ul>
 
-	<% if current_user == entry.author %>
-	<%= link_to "編集", [:edit, entry] %>
-	<% end %>
 </article>
 <% end %>
-<%= will_paginate @entries %>
+<%= will_paginate @entries, :class => 'p-pager' %>
 <% else %>
 <p>記事がありません。</p>
 <% end %>

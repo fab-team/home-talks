@@ -1,4 +1,5 @@
 module ApplicationHelper
+
 	def page_title
 		title = "Morning Glory"
 		title = @page_title + " - " + title if @page_title
@@ -8,10 +9,10 @@ module ApplicationHelper
   def default_meta_tags
     {
       site: 'ホメトーク-HOME TALKS-',
-      title: 'タイトル',
+      title: '',
       reverse: true,
       charset: 'utf-8',
-      description: 'ホメトークは、人から褒められてテンションが上がることができるサービスです。',
+      description: 'ホメトークは、人から褒められてテンションを上がることができるサービスです。',
       keywords: 'ホメトーク,テンション,嬉しい',
       canonical: request.original_url,
       separator: '|',
@@ -21,8 +22,8 @@ module ApplicationHelper
       # ],
       og: {
         site_name: 'ホメトーク-HOME TALKS-',
-        title: 'タイトル',
-        description: 'ホメトークは、人から褒められてテンションが上がることができるサービスです。',
+        title: '',
+        description: 'ホメトークは、人から褒められてテンションを上がることができるサービスです。',
         type: 'website',
         url: request.original_url,
         # image: image_url('ogp.png'),

@@ -17,10 +17,10 @@
 				<li class="p-header__item">
 					<%= link_to "一覧", entries_path %>
 				</li>
-				<li class="p-header__item">
-					<%= link_to "ホメワードを作る", :new_entry %>
-				</li>
 				<%if user_signed_in? %>
+				<li class="p-header__item">
+					<%= link_to "ホメトークを作る", :new_entry %>
+				</li>
 				<!-- サインイン状態 -->
 				<%#= link_to "ログアウト", destroy_user_session_path, method: :delete %>
 				<li class="p-header__item">
@@ -28,6 +28,10 @@
 				</li>
 				<% else %>
 				<!-- サインアウト状態 -->
+				<li class="p-header__item">
+					<%= link_to "ホメトークを作る", user_twitter_omniauth_authorize_path %>
+					<%#= link_to "ホメトークを作る", :new_entry %>
+				</li>
 				<li class="p-header__item">
 					<%= link_to "Twitterでログイン", user_twitter_omniauth_authorize_path %>
 				</li>
@@ -39,15 +43,14 @@
 </header>
 
 
-<div class="p-sign">
 
-	<%if user_signed_in? %>
-	<% else %>
-	<p class="p-sign__text">登録してホメる</p>
+<%if user_signed_in? %>
+<% else %>
+<div class="p-sign">
 	<div class="p-sign__btn">
 		<%= link_to user_twitter_omniauth_authorize_path do %>
 		<i class="fa fa-twitter" aria-hidden="true"></i>Twitterで登録・ログイン
 		<% end %>
 	</div>
-	<% end %>
 </div>
+<% end %>

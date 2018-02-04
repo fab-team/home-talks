@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     @entries = Entry.all
     @entries = @entries.readable_for(current_user)
-    .order(posted_at: :desc).paginate(page: params[:page], per_page: 5)
+    .order(posted_at: :desc).paginate(page: params[:page], per_page: 20)
 
     # @entries = Entry.open.readable_for(current_user)
     #   .order(released_at: :desc).limit(5)

@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <%= display_meta_tags(default_meta_tags) %>
+<head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+  <%= display_meta_tags(default_meta_tags) %>
+  <%= csrf_meta_tags %>
+  <%= render "shared/head" %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <meta name="google-site-verification" content="Oz3Labm5uZvIz7Sh9CUW0Wec58KfFBfDC9H7NTLbCW4" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50448281-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-50448281-4');
+  </script>
+
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-      <p><%= link_to "Morning Glory TOP", :root %></p>
-    </div>
-    <%= yield %>
-    <div id="footer">
-      <%= render "shared/footer" %>
+  <%= render "shared/header" %>
+
+  <div class="p-content">
+    <div class="p-content__inner">
+      <%= yield %>
+
+      <div class="c-button">
+        <%= link_to "トップページに戻る", root_path %>
+      </div>
     </div>
   </div>
+
+  <%= render "shared/footer" %>
 </body>
 </html>

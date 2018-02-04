@@ -1,6 +1,10 @@
-<%# @page_title = current_user ? current_user.name + "さんのブログ" : "会員のブログ" %>
-<h2 class="c-headline__label">吹き出しを押してTwitterでシェアしよう</h2>
+<% @page_title = @user ? @user.name + "さんのホメトーク" : "ホメトーク一覧" %>
+<% @page_description = @user ? @user.name + "さんのホメトークの一覧ページになります。" : "ホメトークの一覧ページになります。" %>
 
+<% set_meta_tags title: @page_title,
+description: @page_description + "ホメトークは、人から褒められてテンションを上がることができるサービスです。" %>
+
+<h2 class="c-headline__label">お気に入りのワードがあったら吹き出しを押してシェアしよう！</h2>
 <% if @entries.present? %>
 <% @entries.each do |entry| %>
 <article class="p-article c-talk--right">
@@ -10,6 +14,7 @@
 	<%#= link_to entry, class: 'c-talk__link' do %>
 	<div class="c-talk__text">
 		<h2 class="c-talk__balloon"><%= entry.title %></h2>
+		<div class="c-talk__url"><%= url_for(entry) %></div>
 	</div>
 	<%# end %>
 	<%#= entry.tag_list %>
@@ -31,4 +36,5 @@
 <%= will_paginate @entries, :class => 'p-pager' %>
 <% else %>
 <p>記事がありません。</p>
+
 <% end %>

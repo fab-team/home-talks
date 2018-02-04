@@ -15,5 +15,4 @@
 //= require jquery-ui
 //= require tag-it
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .

@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
-	<%= display_meta_tags(default_meta_tags) %>
-	<%= csrf_meta_tags %>
-	<%= render "shared/head" %>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600' rel='stylesheet'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+	<%= display_meta_tags(default_meta_tags) %>
+	<%= csrf_meta_tags %>
+
 
 	<meta name="google-site-verification" content="Oz3Labm5uZvIz7Sh9CUW0Wec58KfFBfDC9H7NTLbCW4" />
 	<!-- Global site tag (gtag.js) - Google Analytics -->

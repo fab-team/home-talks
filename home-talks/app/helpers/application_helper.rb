@@ -16,17 +16,17 @@ module ApplicationHelper
       keywords: 'ホメトーク,テンション,嬉しい',
       canonical: request.original_url,
       separator: '|',
-      # icon: [
-      #   { href: image_url('favicon.ico') },
-      #   { href: image_url('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
-      # ],
+      icon: [
+        { href: image_url('favicon.ico') },
+        # { href: image_url('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
+      ],
       og: {
         site_name: 'ホメトーク-HOME TALKS-',
-        title: '',
+        title: 'ホメトーク-HOME TALKS-',
         description: 'ホメトークは、人から褒められてテンションを上がることができるサービスです。',
         type: 'website',
         url: request.original_url,
-        # image: image_url('ogp.png'),
+        image: image_url('ogp.png'),
         locale: 'ja_JP',
       },
       twitter: {

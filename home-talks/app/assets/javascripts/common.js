@@ -34,7 +34,7 @@ $(function () {
     var protocol = location.protocol;
     var host = location.host;
     var talkUrl = $(this).find('.c-talk__url').text();
-    var snsUrl = encodeURIComponent(protocol + host + talkUrl);
+    var snsUrl = encodeURIComponent(host + talkUrl);
 
     // 変数に止まったテキストを代入
     // for (var i = 0; i < SLOT_NUM; i++) {
@@ -69,7 +69,7 @@ $(function () {
     top = windowHeight / 2 - popupHeight / 2 + dualScreenTop;
 
 
-    href = 'http://twitter.com/share?url=' + snsUrl + '&text=' + encodeURIComponent(description) + '&hashtags=' + encodeURIComponent('ホメトーク');
+    href = 'http://twitter.com/share?url=http://' + snsUrl + '&text=' + encodeURIComponent(description) + '&hashtags=' + encodeURIComponent('ホメトーク');
 
     window.open(href, 'twitter', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
   });

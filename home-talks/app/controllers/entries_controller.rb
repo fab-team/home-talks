@@ -15,7 +15,7 @@ class EntriesController < ApplicationController
       @entries = Entry.all
     end
     @entries = @entries.readable_for(current_user)
-    .order(posted_at: :desc).paginate(page: params[:page], per_page: 5)
+    .order(posted_at: :desc).paginate(page: params[:page], per_page: 20)
   end
 
   # 記事の詳細

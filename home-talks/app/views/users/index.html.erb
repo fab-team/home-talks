@@ -1,19 +1,22 @@
-<h2><%=current_user.name%>さんのマイページ情報</h2>
-<%if user_signed_in? %>
-<table style="width: 100%;">
-	<tr>
-		<th>お名前</th>
-		<td><%=current_user.name%></td>
-	</tr>
-	<tr>
-		<th>ニックネーム</th>
-		<td><%=current_user.nickname%></td>
-	</tr>
-	<tr>
-		<th>お写真</th>
-		<td><img src="<%=current_user.image%>"></td>
-	</tr>
-</table>
-<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-<%= link_to "記事一覧", [current_user, :entries] %>
-<%end%>
+<% set_meta_tags title: current_user.name + 'のマイページ', description: current_user.name + 'のマイページになります。ホメトークは、人から褒められてテンションを上がることができるサービスです。' %>
+<%# set_meta_tags title: @article.title, description: @article.description, og: { title: @article.title, type: 'article', image: @article.image_url } %>
+
+<div class="p-user">
+	<div class="c-box p-user__item">
+		<h2 class="c-headline"><%=current_user.name%>さんのマイページ</h2>
+		<%if user_signed_in? %>
+		<div class="c-img--circle" style="background-image: url(<%= current_user.image %>)"></div>
+
+		<%#=current_user.name%>
+		<%#= current_user.nickname %>
+
+		<div class="c-button">
+			<%= link_to "投稿一覧", [current_user, :entries] %>
+		</div>
+
+		<div class="c-button--disable">
+			<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+		</div>
+		<%end%>
+	</div>
+</div>

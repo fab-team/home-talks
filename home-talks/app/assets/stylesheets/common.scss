@@ -379,7 +379,7 @@ common
 .p-sign {
   max-width: 800px;
   width: 90%;
-  margin: 0 auto;
+  margin: 16px auto;
   text-align: center;
 }
 
@@ -393,10 +393,12 @@ common
     background: #00acee;
     padding: 10px;
     border-radius: 2px;
+    margin: auto;
   }
 }
 
 .p-sns {
+  margin-top: 24px;
   text-align: center;
   .fa {
     margin-right: 8px;
@@ -452,36 +454,41 @@ common
 
 .p-form {
   width: 100%;
-  border-top: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-}
+  // border-top: 1px solid #cccccc;
+  // border-right: 1px solid #cccccc;
+  margin-top: 24px;
+    padding: 24px;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
 
 .p-form__item {
-  border-bottom: 1px solid #cccccc;
+  // border-bottom: 1px solid #cccccc;
   width: 100%;
   display: block;
+  margin: 8px 0;
 }
 
 .p-form__heading,
 .p-form__date {
-  border-left: 1px solid #cccccc;
+  // border-left: 1px solid #cccccc;
   display: table-cell;
   vertical-align: middle;
   @include fontsize(14);
   display: block;
   width: 100%;
-  padding: 2%;
+  // padding: 2%;
 }
 
 .p-form__heading {
   line-height: 1.3;
   position: relative;
   width: 20%;
-  background: #eeeeee;
+  // background: #eeeeee;
   @include fontsize(12);
   font-weight: bold;
   width: 100%;
-  padding: 2% percentage(40/750);
+  padding: 2% 0;
 }
 
 .p-form__tag--important {
@@ -495,7 +502,7 @@ common
 
 .p-form__date {
   width: 100%;
-  padding: 2% percentage(40/750);
+  // padding: 2% percentage(40/750);
 
   input,
   textarea {
@@ -544,6 +551,14 @@ common
   }
 }
 
+.p-about__item,
+.p-user__item {
+  margin-top: 24px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
 
 
 /*
@@ -558,6 +573,22 @@ component
   li {
     width: 50%;
   }
+}
+
+.c-img--circle {
+  width: 80px;
+  height: 80px;
+  background-size: 100%;
+  border-radius: 40px;
+  margin: 24px auto 0;
+  border: 2px solid #000;
+}
+
+.c-box {
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
 }
 
 .c-headline {
@@ -656,7 +687,7 @@ component
       position: relative;
       overflow: visible;
       padding: 14px 10px;
-      cursor: default;
+      cursor: pointer;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px;
@@ -693,12 +724,16 @@ component
     position: relative;
     overflow: visible;
     padding: 14px 10px;
-    cursor: default;
+    cursor: pointer;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 0;
     border-top-left-radius: 20px;
   }
+}
+
+.c-talk__url {
+  display: none;
 }
 
 .c-sns--facebook {
@@ -721,12 +756,14 @@ component
 }
 
 .c-button {
-    width: 90%;
-  margin: 40px auto;
+  width: 90%;
+  margin: 24px auto 0;
+  text-align: center;
 
+  a,
   input {
     width: 100%;
-    padding: 8px 0;
+    padding: 16px 0;
     display: block;
     background: #4696d4;
     // background-image: linear-gradient(100deg, #1e7dde, #00c4c4);
@@ -735,6 +772,23 @@ component
     font-weight: bold;
     color: #fff;
   }
+}
+
+.c-button--disable {
+  @extend .c-button;
+
+  a {
+    background: #d0d0d0;
+  }
+}
+
+.c-textlink {
+  border: 1px solid #000;
+  padding: 8px 24px;
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  border-radius: 20px;
 }
 
 #errors {
@@ -767,6 +821,19 @@ utility
   border-left: 1px solid gray;
   padding-left: 8px;
 }
+
+.u-text--left {
+  text-align: left;
+}
+
+.u-text--center {
+  text-align: center;
+}
+
+.u-text--right {
+  text-align: right;
+}
+
 
 /*
 

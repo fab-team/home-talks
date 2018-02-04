@@ -1,6 +1,36 @@
-<% @page_title = "このサイトについて" %>
+<% set_meta_tags title: "ホメトークについて", description: "ホメトークについてご紹介します。ホメトークは、人から褒められてテンションを上がることができるサービスです。" %>
+<div class="p-about">
+	<div class="c-box p-about__item">
+		<h1 class="c-headline">ホメトークとは？</h1>
+		<p class="c-text--midium">人から褒められた言葉を共有して、褒めあえるサイトです。人から褒められると、普段の生活がちょっとテンションション上がる一言をつぶやいてくれます。褒められるだけで気持ちが前向きになったり、気分がいいものです。誰かの生活が、ちょっとでも前向きになるように作ったサービスです。</p>
+	</div>
 
-<h1><%= @page_title %></h1>
+	<div class="c-box p-about__item">
+		<h2 class="c-headline">使い方</h2>
+		<p class="c-text--midium">ただ、ホメトークを見るもよし！お気に入りのワードがあったら吹き出しを押して、Twitterでシェアするのもよし！</p>
+	</div>
 
-<p>Morning Gloryは、1999年に結成された草野球チームです。毎週土曜日の早朝に練習をすることから、Morning Glory（朝顔）というチーム名になりました。おもな活動拠点は、○○河川敷グラウンドです。
-</p>
+	<div class="c-box p-about__item">
+		<h2 class="c-headline">ホメトークを投稿する</h2>
+		<p class="c-text--midium">ログイン・登録ボタンを押してTwitterでの認証をします。あとはマイページからホメトークを登録するだけ！ホメられた時のエピソードやシュチュエーション（ホメエピソード）があったら書いてみてね！</p>
+		<p class="c-text--small">※運営側の判断により、登録した内容が非公開・削除する場合がございます。予めご了承ください。</p>
+		<div class="c-button">
+			<%= link_to "Twitterでログイン", user_twitter_omniauth_authorize_path %>
+		</div>
+	</div>
+
+	<div class="c-box p-about__item">
+		<h2 class="c-headline">ご要望・お問い合わせ</h2>
+		<p class="c-text--midium">ご要望・お問い合わせなどありましたら、公式TwitterアカウントへDMをお送りください。<br>メールでのお問合わせの場合は home.talks1801@gmail.com へお願いします。</p>
+		<div class="c-button">
+			<a href="https://twitter.com/home_talks" target="_blank">公式Twitter</a>
+		</div>
+	</div>
+
+	<div class="c-box p-about__item">
+		<h2 class="c-headline">運営者情報</h2>
+		<p class="c-text--midium">個人で開発・運営してます。<br>
+		アカウント：chokosuki（<a href="https://twitter.com/humming_mmmmmm" target="_blank">twitter</a>）<br>
+		メールでのお問合わせの場合は home.talks1801@gmail.com へお願いします。</p>
+	</div>
+</div>

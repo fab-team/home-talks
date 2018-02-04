@@ -1,3 +1,11 @@
+<% @page_title = @user ? @user.name + "さんのホメトーク" : "ホメトーク一覧" %>
+<% @page_description = @user ? @user.name + "さんのホメトークの一覧ページになります。" : "ホメトークの一覧ページになります。" %>
+
+<% set_meta_tags title: @page_title,
+description: "「" + @entry.title + "」ホメトークは、人から褒められてテンションを上がることができるサービスです。" %>
+
+<% set_meta_tags title: @entry.title %>
+
 <article class="p-article c-talk--right">
 	<b class="c-talk__img" style="background-image: url(&quot;<%= @entry.author.image %>&quot;);"></b>
 	<p class="c-talk__name"><%= @entry.author.name %></p>
@@ -5,6 +13,7 @@
 
 	<div class="c-talk__text">
 		<h1 class="c-talk__balloon"><%= @entry.title %></h1>
+		<div class="c-talk__url"><%= url_for %></div>
 	</div>
 	<% if current_user == @entry.author %>
 	<ul class="p-article__bottom c-text--midium">
@@ -16,10 +25,12 @@
 </article>
 
 
+<% if @entry.body? %>
 <div class="p-article__detail">
-	<div class="p-article__detail__ttl">ホメポイント!</div>
+	<div class="p-article__detail__ttl">ホメエピソード</div>
 	<%= simple_format(@entry.body, :class => "p-article__detail__text") %>
 </div>
+<% end %>
 
 <ul class="p-sns">
 	<!-- <li class="c-sns--facebook"><i class="fa fa-facebook" aria-hidden="true"></i>facebookボタン</li> -->

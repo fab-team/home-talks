@@ -26,6 +26,10 @@ class EntriesController < ApplicationController
   # 新規登録フォーム
   def new
     @entry = Entry.new(posted_at: Time.current)
+    # @all_tag_list = ActsAsTaggableOn::Tag.for_context(:sex_list).pluck(:name)
+    # @all_tag_list = ActsAsTaggableOn::Tag.for_context(:sex_list).pluck(:name)
+    @all_tag_list = ActsAsTaggableOn::Tag.all.pluck(:name)
+    # @all_tag_list = ActsAsTaggableOn::Tag.for_context(:sex_list)
   end
 
   # 編集

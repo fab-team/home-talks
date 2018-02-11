@@ -6,23 +6,6 @@
     <%#= form.label :tag_list, 'Tags (separated by commas)' %>
     <%#= form.text_field :tag_list %>
     <!-- </div> -->
-    <div class="p-form__item">
-      <div class="p-form__heading">
-        <%= form.label :sex_list, '性別（カンマ区切り）' %>
-      </div>
-      <div class="p-form__date">
-        <%= form.text_field :sex_list %>
-      </div>
-    </div>
-
-    <div class="p-form__item">
-      <div class="p-form__heading">
-        <%= form.label :job_list, '職業（カンマ区切り）' %>
-      </div>
-      <div class="p-form__date">
-        <%= form.text_field :job_list %>
-      </div>
-    </div>
 
     <div class="p-form__item">
       <div class="p-form__heading">
@@ -35,11 +18,63 @@
 
     <div class="p-form__item">
       <div class="p-form__heading">
+        <%= form.label :sex_list, 'ホメたい人の性別' %>
+      </div>
+      <div class="p-form__date">
+        <div class="p-form__date__radio">
+          <%= form.radio_button :sex_list, :男性, checked: "checked", class: "p-form__date__radio--btn" %>
+          <%= form.label :sex_list_男性, "男性", class: "p-form__date__radio--label" %>
+
+          <%= form.radio_button :sex_list, :女性, class: "p-form__date__radio--btn" %>
+          <%= form.label :sex_list_女性, "女性", class: "p-form__date__radio--label" %>
+      </div>
+      </div>
+    </div>
+
+    <div class="p-form__item">
+      <div class="p-form__heading">
+        <%= form.label :job_list, 'ホメたい人の職業' %>
+      </div>
+      <div class="p-form__date">
+        <%= form.radio_button :job_list, :一般事務, checked: "checked", class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_一般事務, "一般事務", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :営業, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_営業, "営業", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :人事担当, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_人事担当, "人事担当", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :主婦, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_主婦, "主婦", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :デザイナー, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_デザイナー, "デザイナー", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :プログラマー, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_プログラマー, "プログラマー", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :就活生, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_就活生, "就活生", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :ブロガー, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_ブロガー, "ブロガー", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :ミュージシャン, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_ミュージシャン, "ミュージシャン", class: "p-form__date__radio--label" %>
+
+        <%= form.radio_button :job_list, :その他, class: "p-form__date__radio--btn" %>
+        <%= form.label :job_list_その他, "その他", class: "p-form__date__radio--label" %>
+      </div>
+    </div>
+
+    <div class="p-form__item">
+      <div class="p-form__heading">
         <%= form.label :body %>
       </div>
       <div class="p-form__date">
         <%= form.text_area :body%>
-        <span class="p-form__annotation">※エピソードがあったら書いてください。</span>
+        <span class="p-form__annotation">※ホメたい人へのエピソードがあったら書いてください。</span>
       </div>
     </div>
 

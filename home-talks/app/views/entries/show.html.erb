@@ -9,7 +9,15 @@ description: "「" + @entry.title + "」ホメトークは、人から褒めら�
 <article class="p-article c-talk--right">
 	<b class="c-talk__img" style="background-image: url(&quot;<%= @entry.author.image %>&quot;);"></b>
 	<p class="c-talk__name"><%= @entry.author.name %></p>
-	<span class="c-talk__date"><%= @entry.posted_at.strftime("%m/%d %H:%M") %></span>
+	<ul class="c-talk__info">
+		<% if @entry.sex_list.present? %>
+		<li class="c-talk__info__item"><%= @entry.sex_list %></li>
+		<% end %>
+		<% if @entry.job_list.present? %>
+		<li class="c-talk__info__item"><%= @entry.job_list %></li>
+		<% end %>
+		<li class="c-talk__date"><%= @entry.posted_at.strftime("%m/%d %H:%M") %></li>
+	</ul>
 
 	<div class="c-talk__text">
 		<h1 class="c-talk__balloon"><%= @entry.title %></h1>

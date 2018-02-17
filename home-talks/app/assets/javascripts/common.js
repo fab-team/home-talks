@@ -33,18 +33,22 @@ $(function () {
     // URLを取得
     var protocol = location.protocol;
     var host = location.host;
+    var name = $(this).find('.c-talk__text__name').text();
     var talkUrl = $(this).find('.c-talk__url').text();
     var snsUrl = encodeURIComponent(host + talkUrl);
+    console.log(name);
 
     // 変数に止まったテキストを代入
     // for (var i = 0; i < SLOT_NUM; i++) {
     //   description += $slot_txt[i].text() + '\n';
     // }
 
+    description += name+' さんから褒められました！';
+    description += '\n\n';
     description += '「';
     description += $(this).find('.c-talk__balloon').text();
     description += '」';
-    description += '\n';
+    description += '\n\n';
 
     if (typeof window.screenLeft !== 'undefined') {
       dualScreenLeft = window.screenLeft;
@@ -69,7 +73,7 @@ $(function () {
     top = windowHeight / 2 - popupHeight / 2 + dualScreenTop;
 
 
-    href = 'http://twitter.com/share?url=http://' + snsUrl + '&text=' + encodeURIComponent(description) + '&hashtags=' + encodeURIComponent('ホメトーク');
+    href = 'http://twitter.com/share?url=http://' + snsUrl + '&text=' + encodeURIComponent(description) + '&hashtags=' + encodeURIComponent('ホメトーク') + ',' + encodeURIComponent('褒められた');
 
     window.open(href, 'twitter', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
   });

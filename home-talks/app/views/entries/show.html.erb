@@ -22,6 +22,7 @@ description: "「" + @entry.title + "」ホメトークは、人から褒めら�
 	<div class="c-talk__text">
 		<h1 class="c-talk__balloon"><%= @entry.title %></h1>
 		<div class="c-talk__url"><%= url_for %></div>
+		<div class="c-talk__text__name"><%= @entry.author.name %></div>
 	</div>
 	<% if current_user == @entry.author %>
 	<ul class="p-article__bottom c-text--midium">

@@ -1,0 +1,621 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ta",
+				"tag_path"
+			],
+			[
+				"inc",
+				"include\t@include"
+			],
+			[
+				"se",
+				"sex_list"
+			],
+			[
+				"dl",
+				"display"
+			],
+			[
+				"ex",
+				"_text.scss"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"has",
+				"hasClass\t.hasClass()"
+			],
+			[
+				"r",
+				"rgba\trgba()"
+			],
+			[
+				"in",
+				"include\t@include"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"l",
+				"l_logo"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"s",
+				"sns_bg_pc.png\tw:961 h:180"
+			],
+			[
+				"d",
+				"studio/"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"pa",
+				"private/"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"lo",
+				"location"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"arr",
+				"nav_arrow_s.gif\tw:8 h:9"
+			],
+			[
+				"ou",
+				"outerHeight\t.outerHeight()"
+			],
+			[
+				"di",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: installe",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Remove Package",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Sublimerge: Compare to View",
+				"Sublimerge: Compare to View..."
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/oonishiyoshio/works/home-talks/source/.gitignore",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/assets/stylesheets/common.scss",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/entries_controller.rb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/config/routes.rb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/show.html.erb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/_form.html.erb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/home/index.html.erb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/shared/_header.html.erb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/index.html.erb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/Gemfile",
+		"/Users/oonishiyoshio/Dropbox/web_service/project001/material/接続コマンドなど",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/home_controller.rb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/models/entry.rb",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/log/development.log",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/config/initializers/acts_as_taggable_on.rb",
+		"/Users/oonishiyoshio/works/home-talks/source/Vagrantfile",
+		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/application_controller.rb",
+		"/Users/oonishiyoshio/works/_deploy.php",
+		"/Users/oonishiyoshio/works/test/pixelcode.php",
+		"/Users/oonishiyoshio/works/header-1.php",
+		"/Users/oonishiyoshio/works/header.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/sidebar.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/parts/main-upper.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/single.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/sns.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/style.css",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/parts/main-lower.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-config.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/functions.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/header.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/xeory_extension_child/header.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/index.php",
+		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/footer.php",
+		"/Users/oonishiyoshio/works/dev/development/tool/post_twitter/twittertest.php",
+		"/Users/oonishiyoshio/Dropbox/_task",
+		"/Users/oonishiyoshio/Dropbox/_memo",
+		"/Users/oonishiyoshio/works/dev/development/tool/post_twitter/twitteroauth/twittertest.php",
+		"/Users/oonishiyoshio/works/dev/development/tool/post_twitter/twitteroauth/autoload.php",
+		"/Users/oonishiyoshio/works/dev/development/tool/post_twitter/twitteroauth/README.md",
+		"/Users/oonishiyoshio/works/dev/development/php/001/com-test/color.php",
+		"/Users/oonishiyoshio/works/dev/development/.gitignore",
+		"/Users/oonishiyoshio/works/dev/development/php/001/com-test/composer.json",
+		"/Users/oonishiyoshio/works/dev/development/php/001/data/info.php",
+		"/Users/oonishiyoshio/works/dev/development/php/001/Vagrantfile",
+		"/Users/oonishiyoshio/works/dev/dev_node01/Vagrantfile",
+		"/Users/oonishiyoshio/works/dev/development/tool/confirm.php",
+		"/Users/oonishiyoshio/works/dev/development/tool/index.php",
+		"/Users/oonishiyoshio/works/dev/development/sftp-config.json",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/xeory_base/functions.php",
+		"/Users/oonishiyoshio/works/tz-learning/cms/contact/index.html",
+		"/Users/oonishiyoshio/works/tz-learning/cms/contact/confirm.php",
+		"/Users/oonishiyoshio/works/dev/development/tool/Vagrantfile",
+		"/Users/oonishiyoshio/.ssh/config",
+		"/Users/oonishiyoshio/.Trash/development/.git/config",
+		"/Users/oonishiyoshio/works/dev/development/README.md",
+		"/Users/oonishiyoshio/works/dev/development/.git/config",
+		"/Users/oonishiyoshio/.ssh/github_e",
+		"/Users/oonishiyoshio/.ssh/github_e.pub",
+		"/Users/oonishiyoshio/.ssh/github_id_rsa",
+		"/Users/oonishiyoshio/.ssh/id_rsa.pub",
+		"/Users/oonishiyoshio/.ssh/github_id_rsa.pub",
+		"/Users/oonishiyoshio/works/dev/dev_node01/src/ch02/05-cron/kawase-usd_jpy.js",
+		"/Users/oonishiyoshio/bash_profile",
+		"/Users/oonishiyoshio/works/dev/dev_node01/src/ch02/04-xmlrss/test-xml2.js",
+		"/Users/oonishiyoshio/works/dev/dev_node01/src/ch02/04-xmlrss/tenki.js",
+		"/Users/oonishiyoshio/works/dev/dev_node01/src/ch02/04-xmlrss/tenki-cheerio.js",
+		"/Users/oonishiyoshio/works/dev/dev_node01/src/ch02/03-getall/getall.js",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/example/htdocs/popup01/index.html",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/example/htdocs/parallax01/index.html",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/xeory_extension_child/archive.php",
+		"/Users/oonishiyoshio/Downloads/名言集(投稿用) - シート4.csv",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/site.yml",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/header.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/header.php",
+		"/Users/oonishiyoshio/works/blog/dev/template/book_template01.html",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/lib/functions/head.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/functions.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/head.php",
+		"/Users/oonishiyoshio/works/blog/material/id/id",
+		"/Users/oonishiyoshio/Dropbox/_____dev/dev_recruit/demo.php",
+		"/Users/oonishiyoshio/Dropbox/_____dev/dev_recruit/sass/object/component/_button.scss",
+		"/Users/oonishiyoshio/works/blog/dev/template/book_template.html",
+		"/Users/oonishiyoshio/works/blog/dev/template/template.html",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_article.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/style.css",
+		"/Users/oonishiyoshio/works/blog/wp-config.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_list.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_frame.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/foundation/_variables.scss",
+		"/Users/oonishiyoshio/works/blog/dev/.gitignore",
+		"/Users/oonishiyoshio/Dropbox/dev/dev_marui_template/styleguide/src/sass/object/project/_list.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/style.scss",
+		"/Users/oonishiyoshio/Dropbox/dev/dev_marui_template/styleguide/src/sass/_list.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/custom-post.php",
+		"/Users/oonishiyoshio/works/dev/dev_docker02/docker-compose.yml",
+		"/Users/oonishiyoshio/works/dev/dev_docker/docker-wordpress/README.md",
+		"/Users/oonishiyoshio/works/dev/dev_docker/docker-wordpress/wp-config.php",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/lib/functions/custom-post.php",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/functions.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/front-page.php",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template01.html",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template02.html",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/book_matome.html",
+		"/Users/oonishiyoshio/Downloads/rss-antenna/readme.txt",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template.html",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/tinymce.js",
+		"/Users/oonishiyoshio/Desktop/untitled.html",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/single.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/sidebar.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/admin/init.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/single-meigen.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/taxonomy.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/foundation/_mixin.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_button.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_sns.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_add.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_meigen.scss",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/archive-meigen.php",
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/bzb-functions.php",
+		"/Users/oonishiyoshio/works/blog/dev/sftp-config.json",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/sftp-config.json",
+		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wp-config.php",
+		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/02/index.html",
+		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/03/index.html",
+		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/04/index.html",
+		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/js/common.js",
+		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/index.html",
+		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/js/slick.min.js"
+	],
+	"find":
+	{
+		"height": 51.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 143.0
+	},
+	"pinned_build_system": "",
+	"project": "home-talks.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rou",
+				"home-talks/config/routes.rb"
+			],
+			[
+				"gem",
+				"home-talks/Gemfile"
+			],
+			[
+				"develo",
+				"home-talks/log/development.log"
+			],
+			[
+				"acts_as_taggable_on",
+				"home-talks/config/initializers/acts_as_taggable_on.rb"
+			],
+			[
+				"xeoryheader",
+				"wordpress/wp-content/themes/xeory_extension_child/header.php"
+			],
+			[
+				"header",
+				"themes/xeory_extension_child/header.php"
+			],
+			[
+				"header.php",
+				"themes/xeory_extension/header.php"
+			],
+			[
+				"heade",
+				"themes/xeory_extension_child/header.php"
+			],
+			[
+				"head.php",
+				"wp-content/themes/xeory_base/lib/functions/head.php"
+			],
+			[
+				"head",
+				"wp-content/themes/xeory_base/header.php"
+			],
+			[
+				"_m",
+				"_memo.md"
+			],
+			[
+				"_",
+				"_memo.md"
+			],
+			[
+				"_me",
+				"_memo.md"
+			],
+			[
+				"_memo",
+				"_memo.md"
+			],
+			[
+				"foote",
+				"src/ejs/inc/_footer.ejs"
+			],
+			[
+				"about",
+				"src/sass/object/project/_about.scss"
+			],
+			[
+				"_mix",
+				"src/sass/foundation/_mixin.scss"
+			],
+			[
+				"_hea",
+				"src/sass/layout/_header.scss"
+			],
+			[
+				"_header",
+				"profile_v2.0/src/ejs/inc/_header.ejs"
+			],
+			[
+				"_abou",
+				"profile_v2.0/src/sass/pages/_about.scss"
+			],
+			[
+				"_he",
+				"profile_v2.0/src/ejs/inc/_head.ejs"
+			],
+			[
+				"_head",
+				"profile_v2.0/src/ejs/inc/_header.ejs"
+			],
+			[
+				"_heade",
+				"profile_v2.0/src/ejs/inc/_header.ejs"
+			],
+			[
+				"top.",
+				"profile_v2.0/src/sass/pages/_top.scss"
+			],
+			[
+				"function",
+				"profile_v2.0/node_modules/lodash/function.js"
+			],
+			[
+				"_top",
+				"profile_v2.0/src/sass/pages/_top.scss"
+			],
+			[
+				"top.s",
+				"profile_v2.0/src/sass/pages/_top.scss"
+			],
+			[
+				"memo",
+				"profile_v2.0/_memo.md"
+			],
+			[
+				"_mem",
+				"profile_v2.0/_memo.md"
+			],
+			[
+				"fun",
+				"wp-content/themes/xeory_base/functions.php"
+			],
+			[
+				"meta-boxes.php",
+				"wp-admin/includes/meta-boxes.php"
+			],
+			[
+				"meta",
+				"wp-admin/includes/meta-boxes.php"
+			],
+			[
+				"",
+				"resource/assets/sass/layout/_footer.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/works/home-talks/source/home-talks/app/assets/stylesheets/home-talks.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

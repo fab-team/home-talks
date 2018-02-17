@@ -23,6 +23,7 @@ description: @page_description + "ホメトークは、人から褒められて�
 	<div class="c-talk__text">
 		<h2 class="c-talk__balloon"><%= entry.title %></h2>
 		<div class="c-talk__url"><%= url_for(entry) %></div>
+		<div class="c-talk__text__name"><%= entry.author.name %></div>
 	</div>
 	<%# end %>
 	<%#= entry.tag_list %>

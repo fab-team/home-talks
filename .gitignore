@@ -30,6 +30,7 @@ na-nda.sublime-project
 database.yml
 secrets.yml
 .env
+Gemfile.lock
 
 #set unicorn file
 unicorn.rake

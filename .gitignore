@@ -32,6 +32,8 @@ secrets.yml
 .env
 Gemfile.lock
 
+RubyCrawlerSample
+
 #set unicorn file
 unicorn.rake
 unicorn.rb

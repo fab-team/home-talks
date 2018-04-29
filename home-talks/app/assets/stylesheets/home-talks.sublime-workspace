@@ -4,18 +4,6 @@
 		"selected_items":
 		[
 			[
-				"ta",
-				"tag_path"
-			],
-			[
-				"inc",
-				"include\t@include"
-			],
-			[
-				"se",
-				"sex_list"
-			],
-			[
 				"dl",
 				"display"
 			],
@@ -74,6 +62,10 @@
 			[
 				"po",
 				"position"
+			],
+			[
+				"ta",
+				"target\tAttr"
 			],
 			[
 				"le",
@@ -217,27 +209,83 @@
 	},
 	"file_history":
 	[
-		"/Users/oonishiyoshio/works/home-talks/source/.gitignore",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/assets/stylesheets/common.scss",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/entries_controller.rb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/config/routes.rb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/show.html.erb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/_form.html.erb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/home/index.html.erb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/shared/_header.html.erb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/views/entries/index.html.erb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/Gemfile",
-		"/Users/oonishiyoshio/Dropbox/web_service/project001/material/接続コマンドなど",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/home_controller.rb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/models/entry.rb",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/log/development.log",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/config/initializers/acts_as_taggable_on.rb",
-		"/Users/oonishiyoshio/works/home-talks/source/Vagrantfile",
-		"/Users/oonishiyoshio/works/home-talks/source/home-talks/app/controllers/application_controller.rb",
-		"/Users/oonishiyoshio/works/_deploy.php",
-		"/Users/oonishiyoshio/works/test/pixelcode.php",
-		"/Users/oonishiyoshio/works/header-1.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/y-hilite/footer.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/project/_under.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/.gitignore",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/y-hilite/css/style.css",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/.gitignore",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/project/_footer.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/css/function.css",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/sidebar-staff.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/single-blog.php",
+		"/Users/oonishiyoshio/works/python/clawl/getFF.py",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/archive-blog.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/template_parts/writer.php",
+		"/Users/oonishiyoshio/works/python/clawl/users",
+		"/Users/oonishiyoshio/works/python/clawl/data/20180403_0147.csv",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/Mintz_WPtemplete-ver_002/single-member.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/sidebar-column.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/sidebar-blog.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/functions.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/template_parts/pageNavi.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/single-event.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/single-staff.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/single-column.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/template_parts/related-entries-blog.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace/template_parts/related-entries-column.php",
 		"/Users/oonishiyoshio/works/header.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/project/_breadcrumb.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/project/_articles.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/utility/_align.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/foundation/_base.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/template001/header.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-includes/theme-compat/header.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/gulpfile.js",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/template001/css/_style.css",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/template001/css/style.css",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/utility/_color.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/utility/_margin.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/utility/_padding.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/object/utility/_border.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/foundation/_variables.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/sass/style.scss",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/site.yml",
+		"/Users/oonishiyoshio/works/nina/source/htdocs/wp/wordpress/.gitignore",
+		"/Users/oonishiyoshio/works/nina/source/htdocs/wp/.gitignore",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/.gitignore",
+		"/Users/oonishiyoshio/works/nina/source/htdocs/.gitignore",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/template001/style.css",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/template001/index.php",
+		"/Users/oonishiyoshio/works/hilo-talk/source/htdocs/lionmedia-child/header.php",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/header.php",
+		"/Users/oonishiyoshio/Dropbox/material/wp/theme001/themes-master-673513f7ad17b77914aca8053573eeaaa00e92db/wordpress/wp-content/themes/template001/page.php",
+		"/Users/oonishiyoshio/works/tz-learning/contact/index.html",
+		"/Users/oonishiyoshio/works/tz-learning/contact/confirm.php",
+		"/Users/oonishiyoshio/works/tz-learning/contact/thanks.php",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/page-thanks.php",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/content-page.php",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/page-contact.php",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/js/contact.js",
+		"/Users/oonishiyoshio/works/tz-learning/tz-learning/page.php",
+		"/Users/oonishiyoshio/works/hilo-talk/source/htdocs/lionmedia-child/single.php",
+		"/Users/oonishiyoshio/works/hilo-talk/source/htdocs/lionmedia-child/style.css",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog-child/style.css",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog-child/single.php",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/xeory_extension_child/sidebar.php",
+		"/Users/oonishiyoshio/Dropbox/material/wp/yoshinospeace/functions.php",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog-child/functions.php",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog-child/footer.php",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog-child/header.php",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/wp-content/themes/lionblog/header.php",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/.gitignore",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/gulpfile.js",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/.gitignore",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/site.yml",
+		"/Users/oonishiyoshio/works/gastronomic/untitled.sublime-project",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/sass/style.scss",
+		"/Users/oonishiyoshio/works/gastronomic/source/htdocs/wp/wordpress/sftp-config.json",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/ads.txt",
+		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/sftp-config.json",
 		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/sidebar.php",
 		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/parts/main-upper.php",
 		"/Users/oonishiyoshio/works/topics/cms/source/wp-content/themes/2chwp/single.php",
@@ -288,73 +336,19 @@
 		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/example/htdocs/parallax01/index.html",
 		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/xeory_extension_child/archive.php",
 		"/Users/oonishiyoshio/Downloads/名言集(投稿用) - シート4.csv",
-		"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/site.yml",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/header.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/header.php",
-		"/Users/oonishiyoshio/works/blog/dev/template/book_template01.html",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/lib/functions/head.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/functions.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/head.php",
-		"/Users/oonishiyoshio/works/blog/material/id/id",
-		"/Users/oonishiyoshio/Dropbox/_____dev/dev_recruit/demo.php",
-		"/Users/oonishiyoshio/Dropbox/_____dev/dev_recruit/sass/object/component/_button.scss",
-		"/Users/oonishiyoshio/works/blog/dev/template/book_template.html",
-		"/Users/oonishiyoshio/works/blog/dev/template/template.html",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_article.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/style.css",
-		"/Users/oonishiyoshio/works/blog/wp-config.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_list.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_frame.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/foundation/_variables.scss",
-		"/Users/oonishiyoshio/works/blog/dev/.gitignore",
-		"/Users/oonishiyoshio/Dropbox/dev/dev_marui_template/styleguide/src/sass/object/project/_list.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/style.scss",
-		"/Users/oonishiyoshio/Dropbox/dev/dev_marui_template/styleguide/src/sass/_list.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/custom-post.php",
-		"/Users/oonishiyoshio/works/dev/dev_docker02/docker-compose.yml",
-		"/Users/oonishiyoshio/works/dev/dev_docker/docker-wordpress/README.md",
-		"/Users/oonishiyoshio/works/dev/dev_docker/docker-wordpress/wp-config.php",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/lib/functions/custom-post.php",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/wp-content/themes/xeory_extension/functions.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/front-page.php",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template01.html",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template02.html",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/book_matome.html",
-		"/Users/oonishiyoshio/Downloads/rss-antenna/readme.txt",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/book_template.html",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/tinymce.js",
-		"/Users/oonishiyoshio/Desktop/untitled.html",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/single.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/sidebar.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/admin/init.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/single-meigen.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/taxonomy.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/foundation/_mixin.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_button.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/component/_sns.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_add.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/resource/sass/object/project/_meigen.scss",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/archive-meigen.php",
-		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension/lib/functions/bzb-functions.php",
-		"/Users/oonishiyoshio/works/blog/dev/sftp-config.json",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wordpress/sftp-config.json",
-		"/Users/oonishiyoshio/Dropbox/y-hilite/htdocs/wp-config.php",
-		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/02/index.html",
-		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/03/index.html",
-		"/C/Users/ohnishi-y/Dropbox/blog/htdocs/www/wordpress/sample/js/04/index.html",
-		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/js/common.js",
-		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/index.html",
-		"/C/Users/ohnishi-y/Documents/works/marui/ejtest/html/halloween/js/slick.min.js"
+		"/Users/oonishiyoshio/works/blog/dev/themes/xeory_extension_child/header.php"
 	],
 	"find":
 	{
-		"height": 51.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
 		"height": 101.0,
 		"where_history":
 		[
+			"/Users/oonishiyoshio/works/y-hilite/source/htdocs/wp/wordpress/wp-content/themes/yoshinospeace",
+			""
 		]
 	},
 	"find_state":
@@ -362,6 +356,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p-under",
+			"under",
+			"footer",
+			"add",
+			"footer",
+			"18078",
+			"terms",
+			"100",
+			"div",
+			"24",
+			"post_title",
+			"staffRuby",
+			"post",
+			"my_posts",
+			"get_post",
+			"staffItemImage",
+			"get_the_post_thumbnail",
+			"staffItemImage",
+			"post",
+			"blog",
+			"cat_all",
+			"re_register_post_tag_taxonomy",
+			"style",
+			"blog",
+			"製品の",
+			"products",
+			"タグ",
+			",\n",
+			"products",
+			"get_post",
+			"column",
+			"コラム",
+			".p-footer {\n\tbackground: $footerColor;\n\tpadding: 60px 0 0;\n\tmargin-top: 90px;\n\n\t@include respond(sm) {\n\t\tmargin-top: 60px;\n\t\tpadding: 0;\n\t\tbackground: none;\n\t}\n}\n\n.p-footer__inner {\n\t@include inner(0,0,1100px);\n}\n\n.p-footer__navi {\n\t@include cf();\n}\n\n.footer__list {\n\tfont-size: 14px;\n\tfont-size: 1.4rem;\n\tborder-right: 1px solid #000;\n\n\t&:first-child {\n\t\tborder-left: 1px solid #000;\n\t}\n\n\ta {\n\t\tpadding: 0 24px;\n\t}\n}\n\n.p-footer__bottom {\n\tbackground: #010101;\n\tpadding-top: 24px;\n\tpadding-bottom: 24px;\n\tcolor: #ffffff;\n}\n\n.p-footer__bottom a {\n\tcolor: #ffffff;\n}\n\n.p-footer__copy {\n\tfont-size: 10px;\n\tfont-size: 1rem;\n\tdisplay: block;\n\ttext-align: right;\n\tmargin-top: 16px;\n}\n\n.p-footer__logo {\n\tmargin-top: 80px;\n\ttext-align: center;\n\twidth: 179px;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\n\t@include respond(sm) {\n\t\twidth: 33.33333%;\n\t\tmargin: 24px auto 0;\n\t}\n}\n\n\n.p-footer__social {\n  margin-right: 0;\n}\n\n.p-footer__bottom__address {\n  font-size: 12px;\n  font-size: 1.2rem;\n  margin-bottom: 0;\n}\n\n// SNS\n.p-footer__sns__list {\n\t@include cf();\n\ttext-align: center;\n\n\t@include respond(sm) {\n\t\tbackground: #f8f5f0;\n\t\tpadding:24px;\n\t}\n}\n\n.p-footer__sns__item {\n\tdisplay: inline-block;\n\tmargin: 0 6px;\n\n\n\t@include respond(sm) {\n\t\tmargin: 0 3px;\n\t}\n\n\n\ta {\n\t\twidth: 50px;\n\t\theight: 50px;\n\t\tdisplay: block;\n\t\tbackground: #e7792a;\n\t\tborder-radius: 25px;\n\n\n\t\t@include respond(sm) {\n\t\t\twidth: 49px;\n\t\t\theight: 49px;\n\t\t}\n\n\t}\n\n\timg {\n\t\tmax-width: 100%;\n\t}\n}\n\n// MENU\n.p-footer__menu {\n\tposition: relative;\n\tmargin-top: 48px;\n\n\n\t@include respond(sm) {\n\t\tmargin-top: 0;\n\t}\n}\n\n.p-footer__menu__list {\n\t@include cf();\n}\n\n.p-footer__menu__item {\n\tfloat: left;\n\twidth: 168px;\n\tmargin-left: 17px;\n\t@include fontsize(16);\n\n\n\t@include respond(sm) {\n\t\tfloat:none;\n\t\twidth: 100%;\n\t\tmargin-left: 0;\n\t\tborder-top: 1px solid #fcfcfc;\n\t}\n\n\n\t&:first-child {\n\t\tmargin-left: 0;\n\n\t\t@include respond(sm) {\n\t\t\tborder-top: none;\n\t\t}\n\n\t}\n\n\n\t> a {\n\t\tdisplay: block;\n\t\twidth: 100%;\n\t\tpadding-bottom: 6px;\n\t\tposition: relative;\n\n\t\t@include respond(sm) {\n\t\t\tpadding: 8px percentage(40/750);\n\t\t\tbackground-color: #dcd1c0;\n\t\t}\n\n\t\t&.is_tag {\n\t\t\t@include respond(sm) {\n\t\t\t\tbackground-image: url(../img/common/icon.jpg);\n\t\t\t\tbackground-repeat: no-repeat;\n\t\t\t\tbackground-position: 96% center;\n\t\t\t\tbackground-size: 24px;\n\t\t\t}\n\t\t}\n\n\t\t&.is_active {\n\t\t\t@include respond(sm) {\n\n\t\t\t\tbackground-image: url(../img/common/icon.jpg);\n\t\t\t}\n\t\t}\n\n\t\t&:after {\n\t\t\tcontent:\"\";\n\t\t\tdisplay: block;\n\t\t\twidth: 109px;\n\t\t\theight: 1px;\n\t\t\tposition: absolute;\n\t\t\tbottom: 0;\n\t\t\tleft: 0;\n\t\t\tbackground: #d4c9be;\n\n\t\t\t@include respond(sm) {\n\t\t\t\tdisplay: none;\n\t\t\t}\n\t\t}\n\t}\n\n}\n\n.p-footer__menu--sub {\n\tmargin-top: 16px;\n\n\t@include respond(sm) {\n\t\tmargin-top: 0;\n\t}\n}\n\n.p-footer__menu--sub__item {\n\t@include fontsize(14);\n\tmargin-top: 6px;\n\n\t@include respond(sm) {\n\t\tmargin-top: 0;\n\t\tborder-top: 1px solid #fcfcfc;\n\t}\n\n\n\t&:first-child {\n\t\tmargin-top: 0;\n\t}\n\n\ta {\n\n\t\t@include respond(sm) {\n\t\t\tdisplay: block;\n\t\t\twidth: 100%;\n\t\t\tmargin-top: 0;\n\t\t\tcolor: #ffffff;\n\t\t\tpadding: 8px percentage(78/750);\n\t\t\tbackground: #42301f;\n\t\t}\n\t}\n}\n\n\n.p-footer__copy {\n\tbackground: #42301f;\n\tcolor: #ffffff;\n\tpadding: 8px 0;\n\ttext-align: center;\n\t@include fontsize(13);\n\tmargin-top: 40px;\n\n\t@include respond(sm) {\n\t\tmargin-top: 20px;\n\t\t@include fontsize(10);\n\t}\n}\n\n.p-footer__banner {\n\twidth: percentage(400/750);\n\tmargin: 0 auto;\n\n\t@include respond(sm) {\n\t\tmargin-top: 60px;\n\t}\n\n}\n\n.p-footer__banner__item01,\n.p-footer__banner__item02 {\n\twidth: 253px;\n\tposition: absolute;\n\tbottom: 0;\n\tright: 0;\n\n\t@include respond(sm) {\n\t\tposition: inherit;\n\t\twidth: 100%;\n\t}\n\n\timg {\n\t\twidth: 100%;\n\t}\n}\n\n.p-footer__banner__item01 {\n\tbottom: 33px;\n}\n\n.p-footer__banner__item02 {\n\tbottom: -30px;\n\n\t@include respond(sm) {\n\t\tmargin-top: 8px;\n\t}\n}\n\n.p-footer__logo {\n\tmargin-top: 80px;\n\ttext-align: center;\n\n\twidth: 179px;\n\tmargin-right: auto;\n\tmargin-left: auto;\n\n\n\t@include respond(sm) {\n\t\twidth: percentage(250/750);\n\t\tmargin: 24px auto 0;\n\t}\n}",
+			"; }",
+			"){",
+			"p-article__dat",
+			"lionblog-child",
+			"192.168.22.10",
+			"nina"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -427,6 +460,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 102.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -449,28 +490,40 @@
 		"selected_items":
 		[
 			[
-				"rou",
-				"home-talks/config/routes.rb"
+				"y-hifooter",
+				"wp/wordpress/wp-content/themes/y-hilite/footer.php"
 			],
 			[
-				"gem",
-				"home-talks/Gemfile"
+				"",
+				"wp/wordpress/wp-content/themes/Mintz_WPtemplete-ver_002/single-member.php"
 			],
 			[
-				"develo",
-				"home-talks/log/development.log"
+				"yoshinofunctions",
+				"wp/wordpress/wp-content/themes/yoshinospeace/functions.php"
 			],
 			[
-				"acts_as_taggable_on",
-				"home-talks/config/initializers/acts_as_taggable_on.rb"
+				"yoshinopagenavi",
+				"wp/wordpress/wp-content/themes/yoshinospeace/template_parts/pageNavi.php"
+			],
+			[
+				"elated-entries-",
+				"wp/wordpress/wp-content/themes/yoshinospeace/template_parts/related-entries-column.php"
+			],
+			[
+				"base",
+				"sass/foundation/_base.scss"
+			],
+			[
+				"header",
+				"wp/wordpress/wp-includes/theme-compat/header.php"
+			],
+			[
+				"site",
+				"wp/site.yml"
 			],
 			[
 				"xeoryheader",
 				"wordpress/wp-content/themes/xeory_extension_child/header.php"
-			],
-			[
-				"header",
-				"themes/xeory_extension_child/header.php"
 			],
 			[
 				"header.php",
@@ -575,10 +628,6 @@
 			[
 				"meta",
 				"wp-admin/includes/meta-boxes.php"
-			],
-			[
-				"",
-				"resource/assets/sass/layout/_footer.scss"
 			]
 		],
 		"width": 0.0
